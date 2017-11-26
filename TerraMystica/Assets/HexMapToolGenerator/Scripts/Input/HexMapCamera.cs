@@ -48,6 +48,10 @@ public class HexMapCamera : MonoBehaviour {
 	}
 
 	void Update() {
+		if (_grid == null) {
+			_grid = FindObjectOfType<HexGrid> ();
+		}
+
 		ManageZoom ();
 		ManageRotation ();
 		ManageDisplacement ();

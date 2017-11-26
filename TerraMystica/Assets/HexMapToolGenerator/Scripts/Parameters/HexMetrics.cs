@@ -37,8 +37,8 @@ public static class HexMetrics {
 
 	public const float _bridgeDesignLength = 7f;
 
-	public const int _chunkSizeX = 5;
-	public const int _chunkSizeZ = 5;
+	public const int _chunkSizeX = 1;
+	public const int _chunkSizeZ = 1;
 
 	public const float _streamBedElevationOffset = -1.75f;
 	public const float _outerToInner = 0.866025404f;
