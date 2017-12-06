@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+namespace HexMapGenerator {
+
 public class HexMapCamera : MonoBehaviour {
 
 	#region Variables
@@ -42,16 +44,14 @@ public class HexMapCamera : MonoBehaviour {
 		_swivel = transform.GetChild (0);
 		_stick = _swivel.GetChild (0);
 
-		if (_grid == null) {
-			_grid = FindObjectOfType<HexGrid> ();
-		}
+			SetHexGrid ();
+		
 	}
 
 	void Update() {
-		if (_grid == null) {
-			_grid = FindObjectOfType<HexGrid> ();
-		}
-
+			if (!_grid) {
+				SetHexGrid ();
+			}
 		ManageZoom ();
 		ManageRotation ();
 		ManageDisplacement ();
@@ -60,6 +60,12 @@ public class HexMapCamera : MonoBehaviour {
 	#endregion
 
 	#region Methods
+
+		void SetHexGrid() {
+			if (_grid == null) {
+				_grid = FindObjectOfType<HexGrid> ();
+			}
+		}
 
 	void ManageZoom() {
 		float zoomDelta = Input.GetAxis ("Mouse ScrollWheel");
@@ -129,4 +135,6 @@ public class HexMapCamera : MonoBehaviour {
 	}
 
 	#endregion
+}
+
 }

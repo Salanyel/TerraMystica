@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using System.IO;
-
+using HexMapGenerator;
 public class GameManager : MonoBehaviour {
 
 	#region Variables
