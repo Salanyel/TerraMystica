@@ -2,4 +2,4 @@ To compile the project, you must import the library "HexMapToolGenerator" inside
 Version needed: 1.0
 Address: https://github.com/Xyunn/HexMap/releases/tag/v1.0
 
-From this Unity project, take the package in the ouput folder, or export everything from the folder tree
+From this Unity project, export everything from the folder tree
