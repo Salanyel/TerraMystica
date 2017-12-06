@@ -2,5 +2,5 @@
 /TerraMystica/Temp
 /TerraMystica/Assembly-CSharp.csproj
 /TerraMystica/HexMap.sln
-TerraMystica/Assets/HexMapToolGenerator
+/TerraMystica/Assets/HexMapToolGenerator/*
 TerraMystica/Assembly-CSharp-Editor.csproj
