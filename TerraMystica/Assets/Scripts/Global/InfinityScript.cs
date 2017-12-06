@@ -9,6 +9,12 @@ public class InfinityScript : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+		ApplyBehaviour (_shouldBeInvincible);
+	}
+
+	public void ApplyBehaviour(bool p_value) {
+		_shouldBeInvincible = p_value;
+
 		if (_shouldBeInvincible) {
 			DontDestroyOnLoad (gameObject);
 		}

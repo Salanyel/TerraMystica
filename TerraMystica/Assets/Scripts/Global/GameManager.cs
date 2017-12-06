@@ -18,9 +18,18 @@ public class GameManager : MonoBehaviour {
 
 	public void Initialize() {
 		Debug.Log ("--- Start Initialization");
-		MapInitialize ();
+		InitializeObjects ();
+		InitializeReferences ();
+	}
 
-		gameObject.transform.SetParent (GameObject.FindGameObjectWithTag (Tags._managers).transform);
+	void InitializeObjects() {
+		MapInitialize ();
+		Debug.Log ("--- Map Loaded");
+	}
+
+	void InitializeReferences() {
+		FindObjectOfType<HexMapCamera> ().Grid = _map;
+		Debug.Log ("--- HexMapCamera references initialized");
 	}
 
 	void MapInitialize () {
