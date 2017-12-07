@@ -1,0 +1,44 @@
+﻿<Properties StartupItem="Assembly-CSharp.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/HexMapToolGenerator/Scripts/Input/HexMapCamera.cs">
+    <Files>
+      <File FileName="Assets/HexMapToolGenerator/Scripts/Parameters/HexMetrics.cs" Line="43" Column="34" />
+      <File FileName="Assets/Scripts/Global/GameManager.cs" Line="37" Column="58" />
+      <File FileName="Assets/HexMapToolGenerator/Scripts/HexMap/HexMapEditor.cs" Line="255" Column="21" />
+      <File FileName="Assets/HexMapToolGenerator/Scripts/Input/HexMapCamera.cs" Line="41" Column="26" />
+      <File FileName="Assets/Scripts/Global/InfinityScript.cs" Line="19" Column="34" />
+      <File FileName="Assets/Scripts/Global/SceneArchitecture.cs" Line="17" Column="24" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="TerraMystica" expanded="True">
+            <Node name="Assembly-CSharp" expanded="True">
+              <Node name="HexMapToolGenerator" expanded="True">
+                <Node name="Scripts" expanded="True">
+                  <Node name="HexMap" expanded="True" />
+                  <Node name="Input" expanded="True">
+                    <Node name="HexMapCamera.cs" selected="True" />
+                  </Node>
+                  <Node name="Parameters" expanded="True" />
+                </Node>
+              </Node>
+              <Node name="Scripts" expanded="True">
+                <Node name="Global" expanded="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.NUnit.TestPad">
+        <State name="__root__">
+          <Node name="TerraMystica" expanded="True" selected="True" />
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
