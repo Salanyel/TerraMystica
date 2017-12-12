@@ -3,37 +3,41 @@ using System.Collections.Generic;
 using UnityEngine;
 using System.IO;
 using HexMapGenerator;
-public class GameManager : MonoBehaviour {
+
+public class MapInitializer : MonoBehaviour {
 
 	#region Variables
 
-	[SerializeField]
 	GameObject _mapPrefab;
+
+	string _mapPath;
 
 	HexGrid _map;
 
+	public HexGrid Map {
+		get { return _map; }
+	}
+
 	#endregion
 
-	#region Methods
+	#region Methods 
 
-	public void Initialize() {
-		Debug.Log ("--- Start Initialization");
+	public void Initialize(GameObject p_mapGameObject, string p_path) {
+		_mapPrefab = p_mapGameObject;
+		_mapPath = p_path;
+	}
+
+	public void LoadMap() {
 		InitializeObjects ();
-		InitializeReferences ();
 	}
 
 	void InitializeObjects() {
 		MapInitialize ();
 		Debug.Log ("--- Map Loaded");
 	}
-
-	void InitializeReferences() {
-		FindObjectOfType<HexMapCamera> ().Grid = _map;
-		Debug.Log ("--- HexMapCamera references initialized");
-	}
-
+		
 	void MapInitialize () {
-		string path = Path.Combine (Application.dataPath, "Resources/Map/TerraMystica.map");
+		string path = _mapPath;
 		_map = Instantiate(_mapPrefab).GetComponent<HexGrid>();
 
 		using (BinaryReader reader = new BinaryReader(File.OpenRead(path))) {
@@ -48,4 +52,5 @@ public class GameManager : MonoBehaviour {
 	}
 
 	#endregion
+
 }
