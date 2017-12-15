@@ -15,6 +15,12 @@ public class SceneArchitecture : MonoBehaviour {
 
 	void Awake() {
 		switch (_sceneEnum) {
+
+		case Scene.MainMenu:
+			GameObject mainMenuManager = Instantiate (Resources.Load<GameObject>("Prefabs/Managers/MainMenuManager"));
+			mainMenuManager.GetComponent<MainMenuManager> ().Initialize ();
+			break;
+
 		case Scene.Game:
 			GameObject gameManager = Instantiate (Resources.Load<GameObject>("Prefabs/Managers/GameManager"));
 			gameManager.GetComponent<GameManager> ().Initialize ();

@@ -1,17 +1,22 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/HexMapToolGenerator/Scripts/HexMap/HexCell.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Map/MapInitializer.cs">
     <Files>
-      <File FileName="Assets/HexMapToolGenerator/Scripts/HexMap/HexMapEditor.cs" Line="284" Column="17" />
-      <File FileName="Assets/Scripts/Global/GameManager.cs" Line="1" Column="1" />
-      <File FileName="Assets/HexMapToolGenerator/Scripts/Parameters/HexMetrics.cs" Line="53" Column="40" />
-      <File FileName="Assets/HexMapToolGenerator/Scripts/Input/HexMapCamera.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Global/SceneArchitecture.cs" Line="20" Column="4" />
+      <File FileName="Assets/HexMapToolGenerator/Scripts/HexMap/HexMapEditor.cs" Line="1" Column="1" />
+      <File FileName="Assets/HexMapToolGenerator/Scripts/Parameters/HexMetrics.cs" Line="1" Column="1" />
+      <File FileName="Assets/HexMapToolGenerator/Scripts/Input/HexMapCamera.cs" Line="7" Column="1" />
       <File FileName="Assets/Scripts/Global/InfinityScript.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/Global/SceneArchitecture.cs" Line="1" Column="1" />
-      <File FileName="Assets/HexMapToolGenerator/Scripts/HexMap/HexGrid.cs" Line="187" Column="16" />
-      <File FileName="Assets/HexMapToolGenerator/Scripts/HexMap/HexCell.cs" Line="473" Column="4" />
-      <File FileName="Assets/HexMapToolGenerator/Scripts/HexMap/HexGridChunk.cs" Line="1026" Column="68" />
-      <File FileName="Assets/HexMapToolGenerator/Materials/Terrain.shader" Line="6" Column="23" />
+      <File FileName="Assets/HexMapToolGenerator/Scripts/HexMap/HexGrid.cs" Line="1" Column="1" />
+      <File FileName="Assets/HexMapToolGenerator/Scripts/HexMap/HexCell.cs" Line="1" Column="1" />
+      <File FileName="Assets/HexMapToolGenerator/Scripts/HexMap/HexGridChunk.cs" Line="1024" Column="1" />
+      <File FileName="Assets/HexMapToolGenerator/Materials/Terrain.shader" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Parameters/Enum.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Global/Manager.cs" Line="10" Column="12" />
+      <File FileName="Assets/Scripts/Global/ManagerInstance/GameManager.cs" Line="33" Column="53" />
+      <File FileName="Assets/Scripts/Global/ManagerInstance/MainMenuManager.cs" Line="26" Column="19" />
+      <File FileName="Assets/Scripts/Map/MapInitializer.cs" Line="36" Column="12" />
+      <File FileName="Assets/Scripts/Map/TerraMysticaParameters.cs" Line="10" Column="15" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -19,17 +24,18 @@
           <Node name="TerraMystica" expanded="True">
             <Node name="Assembly-CSharp" expanded="True">
               <Node name="HexMapToolGenerator" expanded="True">
-                <Node name="Materials" expanded="True" />
                 <Node name="Scripts" expanded="True">
-                  <Node name="HexMap" expanded="True">
-                    <Node name="HexCell.cs" selected="True" />
-                  </Node>
+                  <Node name="HexMap" expanded="True" />
                   <Node name="Input" expanded="True" />
-                  <Node name="Parameters" expanded="True" />
                 </Node>
               </Node>
               <Node name="Scripts" expanded="True">
-                <Node name="Global" expanded="True" />
+                <Node name="Global" expanded="True">
+                  <Node name="ManagerInstance" expanded="True" />
+                </Node>
+                <Node name="Map" expanded="True">
+                  <Node name="MapInitializer.cs" selected="True" />
+                </Node>
               </Node>
             </Node>
           </Node>
