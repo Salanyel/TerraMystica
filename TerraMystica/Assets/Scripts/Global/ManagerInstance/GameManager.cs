@@ -13,6 +13,10 @@ public class GameManager : Manager {
 
 	MapInitializer _map;
 
+	public MapInitializer Map {
+		get { return _map; }
+	}
+
 	#endregion
 
 	#region Override
@@ -21,6 +25,8 @@ public class GameManager : Manager {
 		_map = gameObject.AddComponent<MapInitializer> ();
 		_map.Initialize (_mapPrefab, TerraMysticaParameters._mapPath);
 		_map.LoadMap ();
+
+		InputManager.Instance.Map = Map.Map;
 
 		InitializeCamera ();
 	}
